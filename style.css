@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4B4B4B;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.navbar nav a:hover {
+  color: red;
+  border-bottom: 3px solid #0A0A0A;
+}
+
+/* Sidebar for mobile */
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url("images/Snap Stage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 118px;
+  font-family: "Great Vibes",calligraphic;
+  color: #2e4d3c;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+.hero-content p {
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer */
+.footer {
+  background-color: #0e0e2c;
+  color: white;
+  padding: 50px 40px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-box {
+  width: 22%;
+  margin-bottom: 30px;
+}
+.footer-box h3 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+.footer-box p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Explore links */
+#explore a,
+#services a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 8px 0;
+  padding-left: 10px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+#explore a:hover,
+#services a:hover {
+  color: #ffd700;
+  border-left: 3px solid #ffd700;
+  padding-left: 15px;
+}
+
+/* Social */
+.social-links {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.social-links a {
+  color: inherit;
+  margin: 0 10px;
+}
+.social-links a:hover {
+  color: #ffd700;
+}
+
+/* Booking Page */
+.booking-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.booking-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #222;
+}
+.booking-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.booking-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.booking-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.booking-form button:hover {
+  background-color: #c40000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-box {
+    width: 100%;
+  }
+
+  .social-links i {
+    font-size: 20px;
+  }
+
+  .social-links p {
+    font-size: 12px;
+  }
+
+  .booking-form {
+    padding: 20px;
+  }
+}

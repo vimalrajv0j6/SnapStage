@@ -1,154 +1,169 @@
-/* Global Styles */
-:root {
-  --primary-color: #2A3F54;   /* Deep Blue */
-  --secondary-color: #D4AF37; /* Gold */
-  --text-color: #333;
-  --light-bg: #f9f9f9;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
+* {
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  
+  height: 100%;
+}
 
-/* Navigation */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 40px;
+  background-color: #ffffff;
+  border:none;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.logo {
-  font-size: 1.8rem;
+.navbar .logo {
   font-weight: bold;
-  color: var(--primary-color);
+  color: rgb(0, 0, 0);
+  font-size: 22px;
 }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li a {
-  margin: 0 1rem;
+.navbar nav a {
+  margin: 0 15px;
   text-decoration: none;
-  color: var(--text-color);
+  color: #000000;
   font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.navbar nav a:hover {
+  color: red;
+  border-bottom: 3px solid #0A0A0A;
 }
 
-.nav-links li a.active {
-  color: var(--secondary-color);
+/* Sidebar for mobile */
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.logo {
+  background-image: url("images/Snap Stage.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #003366;
 }
 
-.quote-btn {
-  background: var(--secondary-color);
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
-  color: white !important;
+.sidebar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.menu-toggle {
-  display: none;
-  cursor: pointer;
+.sidebar a:hover {
+  color: #0077cc;
 }
 
-/* Hero Section */
+/* Sections */
+section {
+  padding: 80px 60px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 40px auto;
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* About Hero */
 .about-hero {
-  padding: 5rem 10%;
   text-align: center;
-  background: var(--light-bg);
 }
 
 .about-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
+  font-size: 48px;
+  color: #003366;
+  margin-bottom: 20px;
 }
 
-/* Vision Section */
-.vision {
-  padding: 4rem 10%;
-  background: white;
-  text-align: center;
+.about-hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  color: #444;
 }
 
-.vision h2 {
-  font-size: 1.5rem;
-  color: var(--secondary-color);
-  letter-spacing: 5px;
-}
-
-.vision h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin: 1rem 0;
-}
-
-/* Services Section */
-.services {
-  padding: 4rem 10%;
-  background: var(--light-bg);
-  text-align: center;
-}
-
+/* Vision + Services */
+.vision h2,
 .services h2 {
-  font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: #0077cc;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
+.vision h1,
 .services h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin: 1rem 0;
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.vision p,
+.services p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
 }
 
 /* Collaboration CTA */
 .collab-cta {
-  padding: 4rem 10%;
   text-align: center;
-  background: var(--primary-color);
-  color: white;
+  padding: 60px 30px;
+  background: rgba(0, 119, 204, 0.1);
+  border-radius: 20px;
+  margin: 40px auto;
 }
 
 .collab-cta h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.collab-cta p {
+  font-size: 18px;
+  color: #0077cc;
 }
 
 .collab-cta a {
-  color: var(--secondary-color);
-  text-decoration: none;
+  color: #003366;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Chat Button */
 .chat-btn {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: var(--secondary-color);
-  color: white;
-  padding: 1rem 1.5rem;
+  bottom: 25px;
+  right: 25px;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 20px;
   border-radius: 50px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .about-hero h1, .vision h1, .services h1 {
-    font-size: 2rem;
-  }
+.chat-btn:hover {
+  background-color: #005fa3;
 }

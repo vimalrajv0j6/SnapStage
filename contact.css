@@ -40,6 +40,8 @@ body {
 .contact-container {
   display: flex;
   background-image: url('images/Snap\ Stage.jpg');
+   background-repeat: no-repeat;
+  background-size: cover;
   flex-wrap: wrap;
   padding: 40px;
 }

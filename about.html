@@ -2,63 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us | Snap Stage</title>
-  <link rel="stylesheet" href="style.css">
-   <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Event+</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+  <script defer src="about.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-   <header class="navbar">
-    <div class="logo">Snap Stage</div>
-    <nav>
-      <div class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </div>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">EVENT+</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Work Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="quote.html" class="quote-btn">Request Quote</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
 
-
-  <section class="page-section">
-    <h2>About Snap Stage</h2>
-    <p>We bring your dream events to life. From weddings to conferences, our dedicated team handles planning, design, and execution with passion and precision.</p>
+  <!-- Hero Section (About) -->
+  <section class="about-hero">
+    <h1>About.</h1>
+    <p>
+      We are one of the leading Event Management & Wedding Planning companies in India. 
+      We celebrate your love, romance, success, health & wellbeing by organizing powerful 
+      & unforgettable events. We create your D-day, the best day and the best memory ever!
+    </p>
   </section>
- <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-box">
-        <h3>Call Us</h3>
-        <p><strong>India:</strong> +91 63830 85823</p>
-        <h3>Write to Us</h3>
-        <p>snapstage@gmail.com</p>
-      </div>
-      <div class="footer-box">
-        <h3>Locations</h3>
-        <p><strong>Namakkal:</strong><br />3/257 Uthuvari Methupathi</p>
-      </div>
-      <div class="footer-box" id="explore">
-        <h3>Explore</h3>
-        <a href="#">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-box" id="services">
-        <h3>Services</h3>
-        <a href="booking.html">Birthday Celebrations</a>
-        <a href="booking.html">Marriage Functions</a>
-        <a href="booking.html">Corporate Events</a>
-        <a href="booking.html">College Fest</a>
-      </div>
-    </div>
-    <div class="social-links">
-      <a href="https://www.instagram.com/snap_stage_/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <p>© 2025 Snap Stage. All rights reserved.</p>
-    </div>
-  </footer>
 
+  <!-- Vision Section -->
+  <section class="vision">
+    <h2>VI SION</h2>
+    <h1>Driven By A Good Vision</h1>
+    <p>
+      Our vision is to establish ourselves as the foremost event management company in India, 
+      dedicated to crafting experiences that etch cherished memories into the tapestry of your life. 
+      We aspire to create impactful and transformational events that not only celebrate your success 
+      but also translate it into tangible value. Our commitment is to consistently meet and exceed 
+      your expectations, fueled by excellent ideas and flawless execution.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>WORK</h2>
+    <h1>What We Do?</h1>
+    <p>
+      We specialize in creating award-winning events, positioning ourselves among the top event 
+      planning companies in the country. As your comprehensive event planner, we serve as your 
+      go-to resource for all your significant occasions. Our approach involves starting from scratch, 
+      meticulously crafting a unique blueprint tailored to your needs. With 24/7 assistance, we ensure 
+      every detail is seamlessly executed to transform your dreams into reality.
+    </p>
+  </section>
+
+  <!-- Collaboration CTA -->
+  <section class="collab-cta">
+    <h1>Looking for a collaboration?</h1>
+    <p>Let’s talk – <a href="contact.html">Send a message</a></p>
+  </section>
+
+  <!-- Chat Widget -->
+  <div class="chat-btn">
+    <i class="fas fa-comment-dots"></i> Chat with us 😊
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

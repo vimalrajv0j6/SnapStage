@@ -14,8 +14,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: white;
-  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  border:none;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -24,12 +24,13 @@ body {
 
 .navbar .logo {
   font-weight: bold;
+  color: rgb(0, 0, 0);
   font-size: 22px;
 }
 .navbar nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #4B4B4B;
+  color: #000000;
   font-weight: 500;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;

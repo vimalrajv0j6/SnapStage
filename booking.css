@@ -3,13 +3,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+    background-image: url("images/Snap\ Stage.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .booking-section {
-  background-image: url("images/Snap Stage.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #f9f9f9;
   padding: 60px 20px;
   min-height: 100vh;
   display: flex;

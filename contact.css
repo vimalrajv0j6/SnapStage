@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #1c1c1c;
+  background: url('images/Snap\ Stage.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #fff;
 }
 
@@ -39,9 +40,6 @@ body {
 
 .contact-container {
   display: flex;
-  background-image: url('images/Snap\ Stage.jpg');
-   background-repeat: no-repeat;
-  background-size: cover;
   flex-wrap: wrap;
   padding: 40px;
 }

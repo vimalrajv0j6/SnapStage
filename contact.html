@@ -8,20 +8,43 @@
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Alex+Brush&family=Poppins&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Font Awesome CDN for icons -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Snap Stage</div>
-    <nav>
-      <div class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+     <header class="navbar">
+      <div class="logo">Snap Stage</div>
+      <nav>
+        <div class="sidebar" id="sidebar">
+          <a href="index.html">Home</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="navbar-menu-toggle">
+       <i class="fa-solid fa-bars" id="bar"></i>
+        </div>
+      </nav>
+      <div class="side-navbar">
+        <p style="text-align: right">
+          <i class="fa-solid fa-xmark" id="cancel"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p class="side-navbar-link"><a href="index.html">Home</a></p>
+          <p class="side-navbar-link">
+            <a href="booking.html">Booking</a>
+          </p>
+          <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+          <p class="side-navbar-link"><a href="about.html">About</a></p>
+        </div>
       </div>
-    </nav>
-  </header>
-
+    </header>
   <div class="contact-container">
     <div class="contact-info">
       <h2>Get in Touch</h2>
@@ -64,8 +87,12 @@
   <a href="https://t.me/SnapStageSupport" class="telegram" target="_blank" title="Message on Telegram">
     <i class="fab fa-telegram-plane"></i>
   </a>
-</div>
 
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/snap_stage_/" class="instagram" target="_blank" title="View on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
 
 
   <footer class="footer">

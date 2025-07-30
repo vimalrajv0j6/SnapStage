@@ -6,8 +6,9 @@
     <title>About Us | Event+</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about.css" />
+    <script defer src="script.js"></script>
     <script defer src="about.js"></script>
-    <link
+     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Alex+Brush&family=Poppins&display=swap"
       rel="stylesheet"
     />
@@ -15,20 +16,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navigation -->
- <header class="navbar">
-    <div class="logo">Snap Stage</div>
-    <nav>
-      <div class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+    <header class="navbar">
+      <div class="logo">Snap Stage</div>
+      <nav>
+        <div class="sidebar" id="sidebar">
+          <a href="index.html">Home</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="navbar-menu-toggle">
+          <i class="fa-solid fa-bars" id="bar"></i>
+        </div>
+      </nav>
+      <div class="side-navbar">
+        <p style="text-align: right">
+          <i class="fa-solid fa-xmark" id="cancel"></i>
+        </p>
+        <div class="side-navbar-links">
+          <p class="side-navbar-link"><a href="index.html">Home</a></p>
+          <p class="side-navbar-link">
+            <a href="booking.html">Booking</a>
+          </p>
+          <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+          <p class="side-navbar-link"><a href="about.html">About</a></p>
+        </div>
       </div>
-    </nav>
-  </header>
+    </header>
 <main class="main">
     <!-- Hero Section (About) -->
     <section class="about-hero">
@@ -97,7 +122,7 @@
         <p class="desc">Specializes in decor.<br>Has artistic vision.<br>Leads the visual team.<br>Brings ideas to life.</p>
       </div>
       <div class="team-card">
-        <img src="images/me.jpg" alt="Member 7">
+        <img src="images/dhaya.jpg" alt="Member 7">
         <h3>Dhayanithii T</h3>
         <p class="role">Marketing and Promotion Lead</p>
         <p class="desc">Handles promotion strategies for events and services. Manages social media, posters, PR, and brand reach.</p>
@@ -109,13 +134,13 @@
         <p class="desc">Manages transport, equipment, and on-site setup. Ensures timely delivery and arrangement of materials and manpower.</p>
       </div>
       <div class="team-card">
-        <img src="images/me.jpg" alt="Member 9">
+        <img src="images/hariharan.jpg" alt="Member 9">
         <h3>Hariharan S V</h3>
         <p class="role">Finance Handler</p>
         <p class="desc">Maintains budgets, tracks expenses, and handles payments. Ensures cost-efficiency and financial transparency.</p>
       </div>
       <div class="team-card">
-        <img src="images/me.jpg" alt="Member 10">
+        <img src="images/harish.jpg" alt="Member 10">
         <h3>Harish A</h3>
         <p class="role">Logistics Manager</p>
         <p class="desc">Handles on-ground needs.<br>Strong coordinator.<br>Ensures timely delivery.<br>Efficient resource use.</p>
@@ -123,12 +148,12 @@
       <div class="team-card">
         <img src="images/me.jpg" alt="Member 11">
         <h3>Vimalraj P</h3>
-        <p class="role">Technical Director</p>
+        <p class="role">Technical Head</p>
         <p class="desc">Takes care of sound, lighting, stage setup, and multimedia. Ensures all tech aspects run without glitches during events.</p>
       </div>
       <div class="team-card">
         <img src="images/me.jpg" alt="Member 12">
-        <h3>Rishikesavajumar K</h3>
+        <h3>Rishikesavakumar K</h3>
         <p class="role">Technical Manager</p>
         <p class="desc">Specializes in decor.<br>Has artistic vision.<br>Leads the visual team.<br>Brings ideas to life.</p>
       </div>
@@ -163,9 +188,12 @@
   <a href="https://t.me/SnapStageSupport" class="telegram" target="_blank" title="Message on Telegram">
     <i class="fab fa-telegram-plane"></i>
   </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/snap_stage_/" class="instagram" target="_blank" title="View on Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
 </div>
-
-
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">

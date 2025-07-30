@@ -20,3 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+const bar = document.getElementById("bar");
+const sidebar = document.querySelector(".side-navbar");
+const cancel = document.getElementById("cancel");
+
+bar.addEventListener("click", () => {
+  sidebar.style.right = "0";
+});
+
+cancel.addEventListener("click", () => {
+  sidebar.style.right = "-250px";
+});

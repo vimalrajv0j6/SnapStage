@@ -1,81 +1,106 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-    background-image: url("images/Snap\ Stage.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 .booking-section {
-  background-repeat: no-repeat;
-  padding: 60px 20px;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 6rem 2rem 4rem;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 60px);
 }
 
 .form-container {
-  background-color: #ffffff;
-  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2.5rem;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 900px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h2 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 32px;
-  color: #222;
+  margin-bottom: 2rem;
+  color: #ff6b6b;
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.5rem;
 }
 
 form {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-form input,
-form select,
-form textarea {
-  flex: 1 1 250px;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+input,
+select,
+textarea,
+button {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
-  transition: border-color 0.3s ease;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
 }
 
-form input:focus,
-form select:focus,
-form textarea:focus {
-  border-color: #555;
-}
-
-form textarea {
-  flex: 2 1 100%;
+textarea {
   resize: vertical;
   min-height: 120px;
 }
 
-form button {
-  flex: 1 1 100%;
-  padding: 14px;
-  background-color: #222;
-  color: #fff;
-  font-size: 18px;
+button {
+  background-color: #ff6b6b;
+  color: white;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
-form button:hover {
-  background-color: #444;
+button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(255, 107, 107, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .booking-section {
+    padding: 5rem 1.5rem 3rem;
+  }
+  
+  .form-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .form-container h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-section {
+    padding: 4rem 1rem 2rem;
+  }
+  
+  .form-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .form-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    padding: 0.8rem;
+  }
 }
